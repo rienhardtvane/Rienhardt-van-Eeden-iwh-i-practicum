@@ -7,6 +7,8 @@ html
     h1= title
     a(href='/') Return to the homepage
     form(action='/update-cobj', method='POST')
+      label(for='shoebrand') Shoe Brand
+      input#shoebrand(type='text', name='shoebrand', required)
       label(for='name') Name
       input#name(type='text', name='name', required)
       label(for='brand') Brand

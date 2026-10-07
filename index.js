@@ -39,6 +39,7 @@ app.get('/update-cobj', (req, res) => {
 app.post('/update-cobj', async (req, res) => {
     const newShoe = {
         properties: {
+            shoebrand: req.body.shoebrand,
             name: req.body.name,
             brand: req.body.brand,
             description: req.body.description
