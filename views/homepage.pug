@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1= title
+    a(href='/update-cobj') Add to this table
+    table
+      thead
+        tr
+          th Name
+          th Brand
+          th Description
+      tbody
+        each record in data
+          tr
+            td= record.properties.name
+            td= record.properties.brand
+            td= record.properties.description
